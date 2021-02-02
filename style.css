@@ -1,8 +1,7 @@
 
 .slide{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 400px;
+  margin: 40px auto;
 }
 .window{
   width: 300px;
@@ -16,7 +15,7 @@
   width: 900px;
   height:200px;
   border: 1px solid green;
-  transition: all .5s;
+  transition: all 1s;
   
 }
 .window>.buttons{
@@ -25,3 +24,22 @@
   left:8px;
 }
 .red{color:red;}
+
+
+.window>.images2>img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: all 1s;
+}
+
+.right{
+  transform: translateX(100%);
+}
+.left{
+  transform: translateX(-100%);
+}
+.current{
+  transform: translateX(0);
+  z-index: 1
+}
